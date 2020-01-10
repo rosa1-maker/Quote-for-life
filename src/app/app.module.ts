@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { QoutesComponent } from './qoutes/qoutes.component';
 import { QouteDirective } from './qoute.directive';
 import { FormComponent } from './form/form.component';
+import { QoutePipe } from './qoute.pipe';
+import { QouteDetailsComponent } from './qoute-details/qoute-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QoutesComponent,
     QouteDirective,
-    FormComponent
+    FormComponent,
+    QoutePipe,
+    QouteDetailsComponent
   ],
   imports: [
     BrowserModule,
