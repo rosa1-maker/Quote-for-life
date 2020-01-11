@@ -10,6 +10,7 @@ export class QouteDetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
