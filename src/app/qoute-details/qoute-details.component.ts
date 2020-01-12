@@ -7,23 +7,23 @@ import { Qoutes } from '../qoutes'
 })
 export class QouteDetailsComponent implements OnInit {
 
-  // votes: number;
+  votes: number;
 
-  // @Input () quote:Qoutes;
-  // vote = 0;
+  @Input () quote:Qoutes;
+  vote = 0;
 
-  // constructor() {
-  //   this.votes = 0;
-  //  }
+  constructor() {
+    this.votes = 0;
+   }
 
-  //  likeVote(): boolean{
-  //    this.votes +=1;
-  //    return false;
-  //  }
+   likeVote(): boolean{
+     this.votes +=1;
+     return false;
+   }
 
-  //  dislikeVote(): boolean{
-  //   this.votes -=1;
-  //   return false;
+   dislikeVote(): boolean{
+    this.votes -=1;
+    return false;
   }
   ngOnInit() {
 
