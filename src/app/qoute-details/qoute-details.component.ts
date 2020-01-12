@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { Qoutes } from '../qoutes'
 @Component({
   selector: 'app-qoute-details',
   templateUrl: './qoute-details.component.html',
@@ -7,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QouteDetailsComponent implements OnInit {
 
-  constructor() { }
+  // votes: number;
 
+  // @Input () quote:Qoutes;
+  // vote = 0;
+
+  // constructor() {
+  //   this.votes = 0;
+  //  }
+
+  //  likeVote(): boolean{
+  //    this.votes +=1;
+  //    return false;
+  //  }
+
+  //  dislikeVote(): boolean{
+  //   this.votes -=1;
+  //   return false;
+  }
   ngOnInit() {
-    
+
   }
 
 }
