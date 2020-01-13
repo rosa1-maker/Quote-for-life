@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+h1 {
+  font-size: 30px;
+  text-align: center;
+  color: gold;
+}
+
+h1:hover {
+  color: silver;
+}
+
+body {
+  background-image: url(./assets/inspiration.jpeg);
+  background-repeat: no-repeat;
+  background-size: inherit;
+}

@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <div class="contaner">
-    <h1> QUOTES FOR LIFE</h1>
-    <p>Let everyone see your quote by posting it here</p>
-    <hr>
-    <app-form (addQoute)='addNewQoute($event)'></app-form>
-            
-       
-    <div  *ngFor='let qoute of qoutes;let i=index'>
-        <ul>
-            <li>{{qoute.name}}</li>
-            <button (click)='toggleDetails(i)'>See Author</button>
+  <h1> QUOTES FOR LIFE</h1>
+  <p>Let everyone see your quote by posting it here</p>
+  <hr>
+  <app-form (addQoute)='addNewQoute($event)'></app-form>
 
-            <div *ngIf="qoute.showAuthor">
-                <app-qoute-details [qoutes]='qoutes' (isComplete) ='deleteQoute($event,i)'></app-qoute-details>
-            </div>
-        </ul>
-    </div>
+
+  <div *ngFor='let qoute of qoutes;let i=index'>
+    <ul>
+      <li>{{qoute.name}}</li>
+      <button (click)='toggleDetails(i)' style="color: blue;">See Author</button>
+
+      <div *ngIf="qoute.showAuthor">
+        <app-qoute-details [qoutes]='qoutes' (isComplete)='deleteQoute($event,i)'></app-qoute-details>
+      </div>
+    </ul>
+  </div>
 </div>
-<form (ngSubmit)='submitQoute()' #qouteForm='ngForm'>  <form (ngSubmit)='submitQoute()' #qouteForm='ngForm'>
+<form (ngSubmit)='submitQoute()' #qouteForm='ngForm'>
+  <form (ngSubmit)='submitQoute()' #qouteForm='ngForm'>
