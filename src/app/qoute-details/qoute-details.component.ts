@@ -6,26 +6,34 @@ import { Qoutes } from "../qoutes";
   styleUrls: ["./qoute-details.component.css"]
 })
 export class QouteDetailsComponent implements OnInit {
-  votes: number;
+  // votes: number;
 
   @Input() qoutes: Qoutes;
-  vote = 0;
+  // vote = 0;
   @Output() isComplete = new EventEmitter<boolean>();
 
   qouteDelete(complete: boolean) {
     this.isComplete.emit(complete);
   }
-  numberoflikes: number = 0;
-  likebuttonclick() {
-    this.numberoflikes++;
-  }
-  numberofdislikes: number = 0;
-  dislikebutttonclick() {
-    this.numberofdislikes++;
-  }
+  // numberoflikes : number=0
+  // likebuttonclick() {
+  //   this.numberoflikes++;
+  // }
+  // numberofdislikes : number=0
+  // dislikebutttonclick(){
+  //   this.numberofdislikes++;
+  // }
+  numberoflikes : number=0
+  numberofdislikes : number=0
+     likebuttonclick(){
+     this.numberoflikes++;
+}
+  dislikebuttonclick(){
+  this.numberofdislikes++;
+}
 
   constructor() {
-    this.votes = 0;
+    // this.votes = 0;
   }
 
   ngOnInit() {}
