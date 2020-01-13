@@ -3,9 +3,10 @@
     <h1> QUOTES FOR LIFE</h1>
     <p>Let everyone see your quote by posting it here</p>
     <hr>
-            <app-form (addQoute)='addNewQoute($evemt)'></app-form>
+    <app-form (addQoute)='addNewQoute($event)'></app-form>
+            
        
-    <div  *ngFor='let qoute of quotes;let i=index'>
+    <div  *ngFor='let qoute of qoutes;let i=index'>
         <ul>
             <li>{{qoute.name}}</li>
             <button (click)='toggleDetails(i)'>See Author</button>
@@ -16,3 +17,4 @@
         </ul>
     </div>
 </div>
+<form (ngSubmit)='submitQoute()' #qouteForm='ngForm'>  <form (ngSubmit)='submitQoute()' #qouteForm='ngForm'>

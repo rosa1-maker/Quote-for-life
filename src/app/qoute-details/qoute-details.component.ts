@@ -13,7 +13,7 @@ export class QouteDetailsComponent implements OnInit {
   vote = 0;
   @Output() isComplete = new EventEmitter<boolean>();
 
-  goalDelete( complete:boolean){
+  qouteDelete( complete:boolean){
     this.isComplete.emit(complete);
   }
   numberoflikes : number=0

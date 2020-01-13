@@ -1,10 +1,11 @@
 <div class="container">
   <div class="row">
-    <form (ngSubmit)="submitQuote()">
+    <!-- <form (ngSubmit)="submitQuote()"> -->
+        <form (ngSubmit)='submitQoutes()' #qouteForm='ngForm'>
       <div class="forms">
         <label for="name">Qoute</label>
         <textarea type="text" class="form-control" id="name" [(ngModel)]="newQoute.name" name="name" #name='ngModel'
-          required></textarea>{{newQuote}}
+          required></textarea>{{newQoute}}
 
         <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
           <p>Kindly write your quote...</p>
@@ -13,7 +14,7 @@
       </div>
       <div class="forms">
         <label for="author">Author</label>
-        <input type="text" required class="form-control" id="author" [(ngModel)]="newQoute.author" #author="ngModel">
+        <input type="text" required class="form-control" id="author" [(ngModel)]="newQoute.author"name="author" #author="ngModel">
 
         <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
           <p>Enter the author's name ...\</p>
@@ -22,12 +23,12 @@
         <div class="form-group">
 
           <label for="written">Submitted by</label>
-          <input type="text" required class="form-control" id="submitted" [(ngModel)]="newQoute.submitted" #written="ngModel"
+          <input type="text" required class="form-control" id="written" [(ngModel)]="newQoute.submitted"name='written' #written="ngModel"
             required>
 
 
           <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-            <p> Enter your name...) </p>
+            <p> Enter your name... </p>
           </div>
 
         </div>
