@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Qoutes } from '../qoutes'
 @Component({
   selector: 'app-qoute-details',
@@ -9,23 +9,27 @@ export class QouteDetailsComponent implements OnInit {
 
   votes: number;
 
-  @Input () quote:Qoutes;
+  @Input () qoutes:Qoutes;
   vote = 0;
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  goalDelete( complete:boolean){
+    this.isComplete.emit(complete);
+  }
+  numberoflikes : number=0
+  numberofdislikes : number=0
+     likebuttonclick(){
+       this.numberoflikes++;
+     }
+     dislikebutttonclick(){
+       this.numberofdislikes++;
+     }
 
   constructor() {
     this.votes = 0;
    }
 
-   likeVote(): boolean{
-     this.votes +=1;
-     return false;
-   }
-
-   dislikeVote(): boolean{
-    this.votes -=1;
-    return false;
-  }
-  ngOnInit() {
+    ngOnInit() {
 
   }
 

@@ -1,6 +1,6 @@
 # Qoutes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
+This project was generated with the aim of creating a site where people can write quotes.
 
 ## Development server
 

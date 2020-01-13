@@ -8,7 +8,11 @@ import { QouteDirective } from './qoute.directive';
 import { FormComponent } from './form/form.component';
 import { QoutePipe } from './qoute.pipe';
 import { QouteDetailsComponent } from './qoute-details/qoute-details.component';
+import { ReactiveFormsModule, FormsModule} from '@angular/forms'
 
+// import { enableProdMode} from '@angular/core';
+// enableProdMode();
+// bootstrap(....);
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,8 +24,10 @@ import { QouteDetailsComponent } from './qoute-details/qoute-details.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+      ],
   providers: [],
   bootstrap: [AppComponent]
 })
