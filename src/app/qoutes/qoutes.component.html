@@ -1,4 +1,18 @@
 <!DOCTYPE html>
-<div class="">
+<div class="contaner">
     <h1> QOUTES FOR LIFE</h1>
+    <p>Let everyone see your quote by posting it here</p>
+    <hr>
+    <div class="row">
+        <app-form(addQuote)="addNewQuote($evemt)"></app-form>
+    </div>
+    
+    <div class="row *ngFor=let quote of quotes;let i='index'">
+        <ul>
+            <li>{{quote.name}}</li>
+            <button (click)='toggleDetails(i)'>See Author</button>
+
+            <app-quote-details *ngIf="quote.seeAuthor" [quotes]='quote'></app-quote-details>
+        </ul>
+    </div>
 </div>

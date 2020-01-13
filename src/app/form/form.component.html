@@ -1,1 +1,37 @@
-<p>form works!</p>
+<div class="container">
+  <div class="row">
+    <form (ngSubmit)="submitQuote()">
+      <div class="forms">
+        <label for="name">Qoute</label>"
+        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel"
+          required>
+        Display:{{newQuote}}
+
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          <p>Kindly write your quote...</p>
+        </div>
+
+      </div>
+      <div class="forms">
+        <label for="author">Author</label>
+        <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="name">
+
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          <p>Enter the author's name ...\</p>
+        </div>
+        <div class="form-group">
+
+          <label for="written">Submitted by</label>
+          <input type="text" required class="form-control" id="submitted" [(ngModel)]="newQuote.submitted" name="name"
+            required>
+
+
+          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+            <p> Enter your name...) </p>
+          </div>
+
+        </div>
+        <button type="submit" class="btn btn-success btn-Ig">Submit the quote</button>
+    </form>
+  </div>
+</div>
