@@ -8,8 +8,8 @@ This project was generated with the aim of creating a site where people can writ
 <li>To view my site click(https://rosa1-maker.github.io/Quote-for-life/)</li>
 </ul>
 
-## Behavior Driven Development
-<p>Behaviour Input OUtput Page loads, reveals an interactive page with two rows one with the form that alows a user to enter a quote and have them submitted and it will be posted. Already posted quotes that can the be toogles, read then upvoated or down voated and deleated.<p>
+## Behaviour Driven Development
+<p>Behaviour Input OUtput Page loads, reveals an interactive page with two rows one with the form that alows a user to enter a quote and have them submitted and it will be posted. Already posted quotes that can the be toogles, read then upvoated or down voated and deleated.</p>
 
 ## Known Bugs
 <p>1.The Submit button not working but handling the problem immedietly</p>
@@ -25,7 +25,7 @@ This project was generated with the aim of creating a site where people can writ
 
 ## Installation
 
-<p>This is how one can install my project:<p>
+<p>This is how one can install my project:</p>
 <ol>
 <li>Step 1 : Clone this repository using git clone https://github.com/Kraft-Owaka/Quotes.git, or downloading a ZIP file of the code.</li>
 <li>Step 2 : The repository, if downloaded as a .zip file will need to be extracted to your preferred location and opened</li>
