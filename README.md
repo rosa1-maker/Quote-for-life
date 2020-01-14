@@ -12,7 +12,7 @@ This project was generated with the aim of creating a site where people can writ
 <p>Behaviour Input OUtput Page loads, reveals an interactive page with two rows one with the form that alows a user to enter a quote and have them submitted and it will be posted. Already posted quotes that can the be toogles, read then upvoated or down voated and deleated.<p>
 
 ## Known Bugs
-1.The Submit button not working but handling the problem immedietly
+<p>1.The Submit button not working but handling the problem immedietly</p>
 
 ## Technologies used
 <ul>
@@ -24,6 +24,7 @@ This project was generated with the aim of creating a site where people can writ
 </ul>
 
 ## Installation
+
 <p>This is how one can install my project:<p>
 <ol>
 <li>Step 1 : Clone this repository using git clone https://github.com/Kraft-Owaka/Quotes.git, or downloading a ZIP file of the code.</li>
