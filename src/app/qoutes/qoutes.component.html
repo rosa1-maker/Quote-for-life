@@ -11,8 +11,8 @@
       <li>{{qoute.name}}</li>
       <button (click)='toggleDetails(i)' style="color: blue;">See Author</button>
 
-      <div *ngIf="qoute.showAuthor">
-        <app-qoute-details [qoutes]='qoutes' (isComplete)='deleteQoute($event,i)'></app-qoute-details>
+      <div >
+        <app-qoute-details *ngIf="qoute.showAuthor" [qoutes]='qoutes' (isComplete)='deleteQoute($event,i)'></app-qoute-details>
       </div>
     </ul>
   </div>

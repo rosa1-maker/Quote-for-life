@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QoutesComponent } from './qoutes/qoutes.component';
+import { QouteComponent } from './qoutes/qoutes.component';
 import { QouteDirective } from './qoute.directive';
 import { FormComponent } from './form/form.component';
 import { QoutePipe } from './qoute.pipe';
@@ -16,7 +16,7 @@ import { ReactiveFormsModule, FormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
-    QoutesComponent,
+    QouteComponent,
     QouteDirective,
     FormComponent,
     QoutePipe,
