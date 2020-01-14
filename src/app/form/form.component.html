@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <!-- <form (ngSubmit)="submitQuote()"> -->
-    <form (ngSubmit)='submitqoute()' #form='ngForm'>
+    <form (ngSubmit)='submitQoute()' #form='ngForm'>
       <div class="forms">
         <label for="name">Qoute</label>
         <textarea type="text" class="form-control" id="name" [(ngModel)]="newQoute.name" name="name" #name='ngModel'
@@ -24,7 +24,7 @@
       <div class="form-group">
 
         <label for="written">Submitted by</label>
-        <input type="text" required class="form-control" id="written" [(ngModel)]="newQoute.submitted" name='written'
+        <input type="text" required class="form-control" id="written" [(ngModel)]="newQoute.written" name='written'
           #written="ngModel" required>
 
 

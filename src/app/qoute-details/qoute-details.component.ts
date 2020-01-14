@@ -6,10 +6,9 @@ import { Qoute } from "../qoutes";
   styleUrls: ["./qoute-details.component.css"]
 })
 export class QouteDetailsComponent implements OnInit {
-  // votes: number;
 
   @Input() qoutes: Qoute;
-  // vote = 0;
+ 
   @Output() isComplete = new EventEmitter<boolean>();
 
   qouteDelete(complete: boolean) {

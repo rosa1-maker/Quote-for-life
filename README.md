@@ -1,27 +1,34 @@
-# Qoutes
-
+# Qoute-for-life
+## Descrfiption
 This project was generated with the aim of creating a site where people can write quotes.
 
-## Development server
+## links
+To view my codes click(https://github.com/rosa1-maker/Quote-for-life)
+To view my site click(https://rosa1-maker.github.io/Quote-for-life/)
+## Behavior Driven
+Behaviour Input OUtput Page loads, reveals an interactive page with two rows one with the form that alows a user to enter a quote and have them submitted and it will be posted. Already posted quotes that can the be toogles, read then upvoated or down voated and deleated.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Known Bugs
+1.The Submit button not working but handling the problem immedietly
 
-## Code scaffolding
+## Technologies used
+Angular CLI version 8.0.3.
+HTML
+CSS
+Javascript
+Bootstrap 4.3.1
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## License
+The MIT License (MIT) Copyright (c) 2019 Teresa Wanjiku.
 
-## Build
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-## Running unit tests
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@rosa1-maker
 
-## Running end-to-end tests
+Author
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Designed by Teresa Wanjiku
