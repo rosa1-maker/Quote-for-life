@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <div class="contaner">
+  <div class = "top">
   <h1> QUOTES FOR LIFE</h1>
-  <p>Let everyone see your quote by posting it here</p>
   <hr>
   <app-form (addQoute)='addNewQoute($event)'></app-form>
+  </div>
+  <div class="row bottom">
+    <div class="col-ms-6">
+      <div *ngFor='let qoute of qoutes;let i=index'>
+        <ul>
+          <li>{{qoute.name}}</li>
+          <button (click)='toggleDetails(i)' style="color: blue;">See Author</button>
 
-
-  <div *ngFor='let qoute of qoutes;let i=index'>
-    <ul>
-      <li>{{qoute.name}}</li>
-      <button (click)='toggleDetails(i)' style="color: blue;">See Author</button>
-
-      <div >
-        <app-qoute-details *ngIf="qoute.showAuthor" [qoutes]='qoutes' (isComplete)='deleteQoute($event,i)'></app-qoute-details>
+          <div >
+            <app-qoute-details *ngIf="qoute.showAuthor" [qoutes]='qoutes' (isComplete)='deleteQoute($event,i)'></app-qoute-details>
+          </div>
+        </ul>
       </div>
-    </ul>
+    </div>
   </div>
 </div>
-<form (ngSubmit)='submitQoute()' #qouteForm='ngForm'>
-  <form (ngSubmit)='submitQoute()' #qouteForm='ngForm'>
+ 

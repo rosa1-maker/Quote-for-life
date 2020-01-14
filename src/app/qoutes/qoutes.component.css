@@ -1,0 +1,24 @@
+.top{
+    color:pink;
+    font-size: 25px;
+}
+
+.bottom{
+    margin-top: 150px;
+    width: 100vh;
+    color:tan;
+    display: block;
+    background-image:url(".//home/moringaschool/Desktop/Qoute-for-life/Qoutes/src/assets/336238801.jpg");
+    background-position: center;
+    font-size: 30px;
+    text-decoration: none;
+    justify-content: space-between;
+    text-align: center;
+    height: 80vh;
+    margin-bottom: 50px;
+}
+h1{
+    font-size: 34px;
+    color: green;
+   
+}

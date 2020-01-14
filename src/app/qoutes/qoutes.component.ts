@@ -15,6 +15,8 @@ export class QouteComponent implements OnInit {
       "Teresa Clerk",
       new Date(2020, 1, 13)
     ),
+
+
     new Qoute(
       2,
       "When you cannot find the sunshine be the sunshine",
@@ -22,6 +24,9 @@ export class QouteComponent implements OnInit {
       "Maccnon Law",
       new Date(2012, 1, 13)
     ),
+
+
+    
     new Qoute(
       3,
       "The grass is greener when you water it",
@@ -34,7 +39,7 @@ export class QouteComponent implements OnInit {
   addNewQoute(qoutes: Qoute) {
     let qouteLength = this.qoutes,
       length: any;
-    this.qoutes.id = qouteLength;
+    this.qoutes= qouteLength;
     qoutes.completeDate=new Date (qoutes.completeDate)
     this.qoutes.push(qoutes)
   }

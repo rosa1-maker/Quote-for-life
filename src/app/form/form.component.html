@@ -2,7 +2,7 @@
   <div class="row">
     <!-- <form (ngSubmit)="submitQuote()"> -->
     <form (ngSubmit)='submitqoute()' #form='ngForm'>
-      <div class="col-md-3">
+      <div class="forms">
         <label for="name">Qoute</label>
         <textarea type="text" class="form-control" id="name" [(ngModel)]="newQoute.name" name="name" #name='ngModel'
           required>{{newQoute}}</textarea>
@@ -12,7 +12,7 @@
         </div>
 
       </div>
-      <div class="col-md-3">
+      <div class="forms">
         <label for="author">Author</label>
         <input type="text" required class="form-control" id="author" [(ngModel)]="newQoute.author" name="author"
           #author="ngModel">
@@ -21,7 +21,7 @@
           <p>Enter the author's name ...\</p>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="form-group">
 
         <label for="written">Submitted by</label>
         <input type="text" required class="form-control" id="written" [(ngModel)]="newQoute.submitted" name='written'
@@ -34,7 +34,7 @@
 
       </div>
 
-      <div class="col-md-3">
+      <div class="form-group">
 
         <label for="complete">Created On</label>
         <input type='date' id="complete" [(ngModel)]="newQoute.completeDate" name="completeDate" #completeDate="ngModel"
