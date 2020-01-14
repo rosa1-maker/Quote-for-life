@@ -11,9 +11,6 @@ This project was generated with the aim of creating a site where people can writ
 ## Behaviour Driven Development
 <p>Behaviour Input OUtput Page loads, reveals an interactive page with two rows one with the form that alows a user to enter a quote and have them submitted and it will be posted. Already posted quotes that can the be toogles, read then upvoated or down voated and deleated.</p>
 
-## Known Bugs
-<p>1.The Submit button not working but handling the problem immedietly</p>
-
 ## Technologies used
 <ul>
 <li>Angular CLI version 8.0.3.</li>
