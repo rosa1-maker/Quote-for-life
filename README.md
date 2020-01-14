@@ -27,7 +27,7 @@ This project was generated with the aim of creating a site where people can writ
 
 <p>This is how one can install my project:</p>
 <ol>
-<li>Step 1 : Clone this repository using git clone https://github.com/Kraft-Owaka/Quotes.git, or downloading a ZIP file of the code.</li>
+<li>Step 1 : Clone this repository using git clone https://github.com/rosa1-maker/Quote-for-life, or downloading a ZIP file of the code.</li>
 <li>Step 2 : The repository, if downloaded as a .zip file will need to be extracted to your preferred location and opened</li>
 <li>Step 3 : Open the terminal, go to the project directory and download the dependencies in the package.json using npm install</li>
 <li>Step 4 : Run ng serve on the terminal for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files</li>
