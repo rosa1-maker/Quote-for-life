@@ -25,7 +25,6 @@ export class QouteDetailsComponent implements OnInit {
 }
 
   constructor() {
-    // this.votes = 0;
   }
 
   ngOnInit() {}

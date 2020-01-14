@@ -5,16 +5,16 @@
 
 .bottom{
     margin-top: 150px;
+    color:pink;
     width: 100vh;
-    color:tan;
     display: block;
-    background-color: powderblue;;
     background-position: center;
     font-size: 30px;
     text-decoration: none;
     justify-content: space-between;
     text-align: center;
     height: 80vh;
+
     margin-bottom: 50px;
 }
 h1{
